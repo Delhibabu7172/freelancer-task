@@ -88,6 +88,7 @@ window.location.reload()})
         <table className='table'>
           <thead>
             <tr>
+            <th>S.No</th>
              <th>Name</th>
              <th>phone Number</th>
              <th>Email</th>
@@ -95,8 +96,9 @@ window.location.reload()})
              <th>Delete</th>
            </tr></thead>
           <tbody>
-            {filteredUsers.map((item) => (
+            {filteredUsers.map((item,index) => (
               <tr key={item._id}>
+                <td>{index+1}.</td>
                 <td>{item.name}</td>
              <td>{item.phnum}</td>
              <td>{item.email}</td>
